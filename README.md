@@ -6,13 +6,13 @@ A React implementation of Conway's Game of Life.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
+- Introduction
+- Features
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+- Usage
+- Deployment
+- Contributing
+- License
 
 ## Introduction
 
@@ -41,46 +41,68 @@ Make sure you have the following installed:
    ```sh
    git clone https://github.com/<USERNAME>/react-game-of-life.git
    cd react-game-of-life
+   ```
 
-2. Running the App
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+### Running the App
+
 To start the development server:
 
-Open http://localhost:3000 to view it in the browser.
+```sh
+npm start
+```
 
-### Usage
- - Click on the grid to set the initial state.
- - Use the controls to start, stop, and reset the simulation.
- - Observe the evolution of the grid according to Conway's rules.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Deployment
+## Usage
+
+- Click on the grid to set the initial state.
+- Use the controls to start, stop, and reset the simulation.
+- Observe the evolution of the grid according to Conway's rules.
+
+## Deployment
+
 To deploy the app to GitHub Pages:
 
-1. Install the gh-pages package:
+1. Install the `gh-pages` package:
 
-npm install gh-pages --save-dev
+   ```sh
+   npm install gh-pages --save-dev
+   ```
 
-Add the following scripts to your package.json:
+2. Add the following scripts to your [`package.json`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fmdillon%2Fwa%2Freact-game-of-life%2Fpackage.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/Users/mdillon/wa/react-game-of-life/package.json"):
 
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
 
-Deploy the app:
+3. Deploy the app:
 
-npm run deploy
+   ```sh
+   npm run deploy
+   ```
 
-The app will be available at https://<USERNAME>.github.io/<REPO>.
+The app will be available at `https://<USERNAME>.github.io/<REPO>`.
 
-### Contributing
+## Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request.
 
 1. Fork the repository
-2. Create a new branch (git checkout -b feature-branch)
+2. Create a new branch (`git checkout -b feature-branch`)
 3. Make your changes
-4. Commit your changes (git commit -m 'Add some feature')
-5. Push to the branch (git push origin feature-branch)
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature-branch`)
 6. Open a pull request
 
-### License
-This project is licensed under the MIT License - see the LICENSE file for details. ```
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
